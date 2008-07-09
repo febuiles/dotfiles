@@ -1,0 +1,5 @@
+[user]
+	name = Federico Builes
+	email = federico.builes@gmail.com
+[alias]
+	lh = !git-lh
