@@ -2585,3 +2585,830 @@ exit
 xit
 ls -a
 exit
+rm -rf Privoxy/
+rm -rf DoubleCommand/
+rm -rf rEFItBlesser/
+exit
+cd /Library/Tor
+sudo -s
+exit
+./dir
+cd programacion/linkroll/
+script/plugin install git://github.com/technoweenie/restful-authentication.git 
+script/plugin install git://github.com/technoweenie/restful-authentication.git --force
+rake spec
+cd ...
+cd rbx
+cd rbx/spec/ruby/1.8/library/socket/
+ls socket/
+cat socket/pack_sockaddr_in_spec.rb 
+cat socket/sysaccept_spec.rb 
+du -hv
+df
+du 
+du *
+du -h
+du -h *
+rm accept_nonblock_spec.rb 
+rm write_spec.rb 
+ruby 1.rb 1 2 3 4 5 6
+ruby 1.rb 0 0 4 1 2
+ruby 1.rb 0 0 0 4 1 2
+federicobuiles@korobushka ~
+ruby -ropenssl -e 'puts :worked'
+exit
+cd /Library/Tor
+sudo -s
+./dir
+cd programacion/linkroll/
+script/plugin install git://github.com/technoweenie/restful-authentication.git 
+script/plugin install git://github.com/technoweenie/restful-authentication.git --force
+rake spec
+cd ...
+cd rbx
+cd rbx/spec/ruby/1.8/library/socket/
+ls socket/
+cat socket/pack_sockaddr_in_spec.rb 
+cat socket/sysaccept_spec.rb 
+du -hv
+df
+du 
+du *
+du -h
+du -h *
+rm accept_nonblock_spec.rb 
+rm write_spec.rb 
+ruby 1.rb 1 2 3 4 5 6
+ruby 1.rb 0 0 4 1 2
+federicobuiles@korobushka ~
+ruby -ropenssl -e 'puts :worked'
+ruby 1.rb 0 0 0 4 1 2
+exit
+rm write_spec.rb 
+ruby 1.rb 1 2 3 4 5 6
+ruby 1.rb 0 0 4 1 2
+federicobuiles@korobushka ~
+ruby -ropenssl -e 'puts :worked'
+ruby 1.rb 0 0 0 4 1 2
+exit
+irb
+ruby 1.rb 2 2 2 4 4 3
+ruby 1.rb 1 1 1 4 3 2
+ruby 1.rb 5 5 5 6 6 5
+ruby 1.rb 4 4 4 5 5 6
+cd rbx/
+git revert HEAD^
+gi tlog
+git revert HEAD^ --hard
+git revert HEAD^ 
+git revert HEAD
+git reset HEAD^ --hard
+rake git:update
+git revert HEAD 
+msr spec/ruby/1.8/core/file
+mspec -truby-1.9 spec/ruby/1.8/core/file
+mspec -t1.8.6 spec/ruby/1.8/core/file
+mspec -t1.8.7 spec/ruby/1.8/core/file
+cd spec/ruby/
+gst
+cd 1.8/library/
+mkdir logger
+cd logger/
+mkdir constants_spec.rb
+rm -rf constants_spec.rb/
+mv constants_spec.rb severity_spec.rb
+msr severity_spec.rb 
+cd ..
+cd socket/
+mkdir constants
+mv constants_spec.rb constants
+mspec -t187 constants/
+mspec -t186 constants/
+mspec -truby-1.9 constants/
+msr constants/
+rake spec update
+rake build
+rake spec:update
+git log
+Date:   Tue Jul 8 10:47:36 2008 +0200
+git push origin master
+3 cd ~
+cd~
+mv .bash* .dhl_info.yml .gem* .git* .irbrc .railsrc .shipping.yml programacion/dotfiles/
+cat .rubyforge/
+ls .rubyforge/
+mv .bash_history bash_history
+mv .bash_login bash_login
+mv .bash_profile bash_profile
+rm .bash_scm 
+mv .bashrc bashrc
+mv .dhl_info.yml dhl_info.yml
+ls .gem
+mv .gem gem
+mv .git git
+mv .gitconfig gitconfig
+rm .gitignore
+mv .gitk gitk
+mv .irbrc irbrc
+mv .railsrc railsrc
+cat .shipping.yml 
+rm .shipping.yml 
+ls -a
+cd .git
+mv git .git
+cd ~
+ls
+rm .bash*
+rm .dhl_info.yml 
+rm .git*
+rm .irbrc
+rm .railsrc 
+rm .README 
+rm .script.rb 
+cd programacion/dotfiles/
+ruby script.rb 
+git add .
+git commit -m "initial dotfiles"
+bash
+rm -rf .tor .vidalia/
+exit
+exit
+irb
+vps
+ssh root@tpd
+sudo gem install github
+gem -v
+sudo gem --update system
+sudo gem update --system
+gem install defunkt-github
+sudo gem install defunkt-github
+cd programacion/
+mkdir dotfiles
+cd dotfiles/
+git init
+touch README
+git add REAME
+git add README
+git commit -m "initial commit"
+  git remote add origin git@github.com:febuiles/dotfiles.git
+git push origin master
+vi script.rb
+ri Logger
+cd rbx/spec/ruby/
+git log
+rake spec:update
+git push origin master
+qexit
+exit
+irb
+cd programacion/mspec/
+ls
+grep -R "output_to_fd" *
+ssh root@tpd
+exit
+cd rbx/spec/ruby/1.8/library/socket/
+ls socket/
+cat socket/pack_sockaddr_in_spec.rb 
+cat socket/sysaccept_spec.rb 
+cd socket/
+du -hv
+df
+du 
+du *
+du -h
+du -h *
+rm accept_nonblock_spec.rb 
+rm write_spec.rb 
+cd ~
+irb
+ruby 1.rb 1 2 3 4 5 6
+ruby 1.rb 0 0 4 1 2
+ruby 1.rb 0 0 0 4 1 2
+federicobuiles@korobushka ~
+ruby 1.rb 1 1 1 4 3 2
+ruby -ropenssl -e 'puts :worked'
+exit
+cd /Library/Tor
+sudo -s
+./dir
+cd programacion/linkroll/
+git reset HEAD^ --hard
+gst
+script/plugin install git://github.com/technoweenie/restful-authentication.git 
+script/plugin install git://github.com/technoweenie/restful-authentication.git --force
+rake spec
+cd ...
+cd rbx
+cd rbx/spec/ruby/1.8/library/socket/
+ls socket/
+cat socket/pack_sockaddr_in_spec.rb 
+cat socket/sysaccept_spec.rb 
+cd socket/
+du -hv
+df
+du 
+du *
+du -h
+du -h *
+rm accept_nonblock_spec.rb 
+rm write_spec.rb 
+cd ~
+ruby 1.rb 1 2 3 4 5 6
+ruby 1.rb 0 0 4 1 2
+federicobuiles@korobushka ~
+ruby 1.rb 1 1 1 4 3 2
+ruby -ropenssl -e 'puts :worked'
+ruby 1.rb 0 0 0 4 1 2
+ruby 1.rb 2 2 2 4 4 3
+irb
+exit
+rm write_spec.rb 
+cd ~
+ruby 1.rb 1 2 3 4 5 6
+ruby 1.rb 0 0 4 1 2
+federicobuiles@korobushka ~
+ruby 1.rb 1 1 1 4 3 2
+ruby -ropenssl -e 'puts :worked'
+ruby 1.rb 0 0 0 4 1 2
+ruby 1.rb 2 2 2 4 4 3
+irb
+exit
+cd programacion/linkroll/
+sc
+exit
+cd rbx
+rake git:update
+rm foo
+ssh vps -p 443
+bc
+exit
+exit
+exit
+xit
+ls -a
+exit
+rm -rf Privoxy/
+rm -rf DoubleCommand/
+rm -rf rEFItBlesser/
+exit
+cd /Library/Tor
+sudo -s
+exit
+./dir
+cd programacion/linkroll/
+script/plugin install git://github.com/technoweenie/restful-authentication.git 
+script/plugin install git://github.com/technoweenie/restful-authentication.git --force
+rake spec
+cd ...
+cd rbx
+cd rbx/spec/ruby/1.8/library/socket/
+ls socket/
+cat socket/pack_sockaddr_in_spec.rb 
+cat socket/sysaccept_spec.rb 
+du -hv
+df
+du 
+du *
+du -h
+du -h *
+rm accept_nonblock_spec.rb 
+rm write_spec.rb 
+ruby 1.rb 1 2 3 4 5 6
+ruby 1.rb 0 0 4 1 2
+ruby 1.rb 0 0 0 4 1 2
+federicobuiles@korobushka ~
+ruby -ropenssl -e 'puts :worked'
+exit
+cd /Library/Tor
+sudo -s
+./dir
+cd programacion/linkroll/
+script/plugin install git://github.com/technoweenie/restful-authentication.git 
+script/plugin install git://github.com/technoweenie/restful-authentication.git --force
+rake spec
+cd ...
+cd rbx
+cd rbx/spec/ruby/1.8/library/socket/
+ls socket/
+cat socket/pack_sockaddr_in_spec.rb 
+cat socket/sysaccept_spec.rb 
+du -hv
+df
+du 
+du *
+du -h
+du -h *
+rm accept_nonblock_spec.rb 
+rm write_spec.rb 
+ruby 1.rb 1 2 3 4 5 6
+ruby 1.rb 0 0 4 1 2
+federicobuiles@korobushka ~
+ruby -ropenssl -e 'puts :worked'
+ruby 1.rb 0 0 0 4 1 2
+exit
+rm write_spec.rb 
+ruby 1.rb 1 2 3 4 5 6
+ruby 1.rb 0 0 4 1 2
+federicobuiles@korobushka ~
+ruby -ropenssl -e 'puts :worked'
+ruby 1.rb 0 0 0 4 1 2
+exit
+irb
+ruby 1.rb 2 2 2 4 4 3
+ruby 1.rb 1 1 1 4 3 2
+ruby 1.rb 5 5 5 6 6 5
+ruby 1.rb 4 4 4 5 5 6
+cd rbx/
+git revert HEAD^
+gi tlog
+git revert HEAD^ --hard
+git revert HEAD^ 
+git revert HEAD
+git reset HEAD^ --hard
+rake git:update
+git revert HEAD 
+msr spec/ruby/1.8/core/file
+mspec -truby-1.9 spec/ruby/1.8/core/file
+mspec -t1.8.6 spec/ruby/1.8/core/file
+mspec -t1.8.7 spec/ruby/1.8/core/file
+cd spec/ruby/
+gst
+cd 1.8/library/
+mkdir logger
+mkdir constants_spec.rb
+rm -rf constants_spec.rb/
+mv constants_spec.rb severity_spec.rb
+msr severity_spec.rb 
+cd socket/
+mkdir constants
+mv constants_spec.rb constants
+mspec -t187 constants/
+mspec -t186 constants/
+mspec -truby-1.9 constants/
+msr constants/
+rake spec update
+rake build
+git log
+Date:   Tue Jul 8 10:47:36 2008 +0200
+3 cd ~
+cd~
+mv .bash* .dhl_info.yml .gem* .git* .irbrc .railsrc .shipping.yml programacion/dotfiles/
+cat .rubyforge/
+ls .rubyforge/
+mv .bash_history bash_history
+mv .bash_login bash_login
+mv .bash_profile bash_profile
+rm .bash_scm 
+mv .bashrc bashrc
+mv .dhl_info.yml dhl_info.yml
+ls .gem
+mv .gem gem
+mv .git git
+mv .gitconfig gitconfig
+rm .gitignore
+mv .gitk gitk
+mv .irbrc irbrc
+mv .railsrc railsrc
+cat .shipping.yml 
+rm .shipping.yml 
+ls -a
+cd .git
+mv git .git
+cd ~
+rm .bash*
+rm .dhl_info.yml 
+rm .git*
+rm .irbrc
+rm .railsrc 
+rm .README 
+rm .script.rb 
+cd programacion/dotfiles/
+ruby script.rb 
+git add .
+git commit -m "initial dotfiles"
+bash
+rm -rf .tor .vidalia/
+exit
+exit
+irb
+vps
+ssh root@tpd
+sudo gem install github
+gem -v
+sudo gem --update system
+sudo gem update --system
+gem install defunkt-github
+sudo gem install defunkt-github
+cd programacion/
+mkdir dotfiles
+cd dotfiles/
+git init
+touch README
+git add REAME
+git add README
+git commit -m "initial commit"
+  git remote add origin git@github.com:febuiles/dotfiles.git
+vi script.rb
+cd rbx/spec/ruby/1.8/library/logger/
+mkdir application
+mkdir fixtures
+cat foo.log 
+rm foo.log 
+ls
+bmsr application/new_spec.rb 
+cat test_log.log 
+["I, [2008-07-09T17:11:12.120879 #968]  INFO -- TestApp: Start of TestApp.\n", "W, [2008-07-09T17:11:12.121181 #968]  WARN -- TestApp: Test log message\n", "I, [2008-07-09T17:11:12.121231 #968]  INFO -- TestApp: End of TestApp. (status: true)\n"]
+federicobuiles@korobushka ~/rbx/spec/ruby/1.8/library/logger
+msr application/new_spec.rb 
+grep -R "output_to_fd" *
+mspec -truby-1.9 application/new_spec.rb 
+mspec -tjruby application/new_spec.rb 
+grep -R "IOStub" *
+cd ..
+grep -R "$stderr" *
+grep -R "stderr" *
+cd logger/
+mspec -t186 application/new_spec.rb 
+rm test_log.log 
+mspec -t187 application/new_spec.rb 
+msr application/log_spec.rb 
+/Library/Ruby/Gems/1.8/gems/mspec-1.1.1/lib/mspec/runner/mspec.rb:48:in `files'
+msr application/
+
+> 
+msr application/log_spec.rb
+mspec -tjruby application/
+cd ../..
+mspec -t186 library/ -V
+msr application/
+cd library/
+cd logger
+msr application/level_spec.rb
+msr application/start_spec.rb
+mspec -truby-1.9 application/
+mspec -truby-1.9 application/set_log_spec.rb
+rake spec:update
+mspec -truby-1.9 application/log_spec.rb
+mspec -t186 application/
+git push origin master
+irb
+vps
+exit
+man lsof
+git push origin master
+vps
+exit
+man lsof
+sudo vi /etc/hosts
+cd rbx
+irb
+mspec -t186 spec/ruby/1.8/library/socket/basicsocket/
+mspec -t186 spec/ruby/1.8/library/socket/
+mv .gem gem
+mv .git git
+mv .gitconfig gitconfig
+rm .gitignore
+mv .gitk gitk
+mv .irbrc irbrc
+mv .railsrc railsrc
+cat .shipping.yml 
+rm .shipping.yml 
+ls -a
+cd .git
+mv git .git
+cd ~
+rm .bash*
+rm .dhl_info.yml 
+rm .git*
+rm .irbrc
+rm .railsrc 
+rm .README 
+rm .script.rb 
+cd programacion/dotfiles/
+ruby script.rb 
+git add .
+git commit -m "initial dotfiles"
+bash
+rm -rf .tor .vidalia/
+exit
+exit
+irb
+vps
+ssh root@tpd
+sudo gem install github
+gem -v
+sudo gem --update system
+sudo gem update --system
+gem install defunkt-github
+sudo gem install defunkt-github
+cd programacion/
+mkdir dotfiles
+cd dotfiles/
+git init
+touch README
+git add REAME
+git add README
+git commit -m "initial commit"
+  git remote add origin git@github.com:febuiles/dotfiles.git
+vi script.rb
+cd rbx/spec/ruby/1.8/library/logger/
+mkdir application
+mkdir fixtures
+cat foo.log 
+rm foo.log 
+bmsr application/new_spec.rb 
+cat test_log.log 
+["I, [2008-07-09T17:11:12.120879 #968]  INFO -- TestApp: Start of TestApp.\n", "W, [2008-07-09T17:11:12.121181 #968]  WARN -- TestApp: Test log message\n", "I, [2008-07-09T17:11:12.121231 #968]  INFO -- TestApp: End of TestApp. (status: true)\n"]
+federicobuiles@korobushka ~/rbx/spec/ruby/1.8/library/logger
+msr application/new_spec.rb 
+grep -R "output_to_fd" *
+mspec -truby-1.9 application/new_spec.rb 
+mspec -tjruby application/new_spec.rb 
+grep -R "IOStub" *
+grep -R "$stderr" *
+grep -R "stderr" *
+mspec -t186 application/new_spec.rb 
+rm test_log.log 
+mspec -t187 application/new_spec.rb 
+msr application/log_spec.rb 
+/Library/Ruby/Gems/1.8/gems/mspec-1.1.1/lib/mspec/runner/mspec.rb:48:in `files'
+msr application/
+> 
+msr application/log_spec.rb
+mspec -tjruby application/
+cd ../..
+mspec -t186 library/ -V
+msr application/
+cd library/
+cd logger
+msr application/level_spec.rb
+msr application/start_spec.rb
+mspec -truby-1.9 application/
+mspec -truby-1.9 application/set_log_spec.rb
+mspec -truby-1.9 application/log_spec.rb
+mspec -t186 application/
+cd 1.8/library/
+mkdir logger
+cd ../../
+cd library/socket/
+grep -R "SOL"
+grep -R "SOL" *
+ls /tmp/test_log.log 
+rm /tmp/test_log.log 
+msr logger/new_spec.rb 
+cat /tmp/test_log.log 
+cat foo.test
+cat foo.test.0
+mspec -tr -T -d socket/tcpsocket/
+cd logger/
+rm foo.test
+rm foo.test*
+cat foo.test.0 
+rm foo.test.0 
+cat foo.test 
+rm foo.test 
+rm path.0 
+cat path
+rm path
+rm /tmp/logfile_test.log*
+cat /tmp/logfile_test.log
+cat /tmp/logfile_test.log.0
+msr -T -d logger/new_spec.rb 
+ls /tmp
+msr -T -d logger/
+cd ..
+msr socket/unixserver/
+ls /tmp/
+cat /tmp/specs.2908.1 
+rm /tmp/specs.2908.*
+cat /tmp/file_chmod_test.lnk 
+cat /tmp/file_chmod_test.lnk
+cat /tmp/emacs501/
+cat /tmp/emacs501/server
+ls
+rake spec:update
+git push origin master
+cd socket/
+grep -R "localhost" *
+git grep "localhost" +
+git grep "localhost" *
+gd 40d7019b1f6
+..HEAD^^^
+$ 
+gd 40d7019b1f6..HEAD^^^
+cd tcpsocket/
+gd 40d7019b1f6 gethostbyname_spec.rb
+ls /tmp
+msr -T -d logger/
+cd ..
+msr socket/unixserver/
+ls /tmp/
+cat /tmp/specs.2908.1 
+rm /tmp/specs.2908.*
+cat /tmp/file_chmod_test.lnk 
+cat /tmp/file_chmod_test.lnk
+cat /tmp/emacs501/
+cat /tmp/emacs501/server
+ls
+rake spec:update
+git push origin master
+cd socket/
+grep -R "localhost" *
+git grep "localhost" +
+git grep "localhost" *
+gd 40d7019b1f6
+..HEAD^^^
+$ 
+gd 40d7019b1f6..HEAD^^^
+cd tcpsocket/
+gd 40d7019b1f6 gethostbyname_spec.rb
+cd rbx
+fg
+msr spec/ruby/1.8/library/socket/socket/
+irb
+vi /etc/hosts
+msr spec/ruby/1.8/library/socket/
+sudo vi /etc/hosts
+msr spec/ruby/1.8/library/socket/ -V
+exit
+/Library/Ruby/Gems/1.8/gems/mspec-1.1.1/lib/mspec/runner/mspec.rb:48:in `files'
+msr application/
+> 
+msr application/log_spec.rb
+mspec -tjruby application/
+cd ../..
+mspec -t186 library/ -V
+msr application/
+cd library/
+cd logger
+msr application/level_spec.rb
+msr application/start_spec.rb
+mspec -truby-1.9 application/
+mspec -truby-1.9 application/set_log_spec.rb
+rake spec:update
+mspec -truby-1.9 application/log_spec.rb
+mspec -t186 application/
+git push origin master
+irb
+man lsof
+git push origin master
+man lsof
+irb
+cd rbx
+mspec -t186 spec/ruby/1.8/library/socket/basicsocket/
+mspec -t186 spec/ruby/1.8/library/socket/ipsocket/
+mspec -t186 spec/ruby/1.8/library/socket/ -V
+mspec -t186 spec/ruby/1.8/library/socket/udpsocket/
+mspec -t186 spec/ruby/1.8/library/socket/
+mspec -t186 spec/ruby/1.8/library/socket/socket/getaddrinfo_spec.rb 
+vi /etc/hosts
+fg
+sudo vi /etc/hosts
+mspec -t186 spec/ruby/1.8/library/socket/socket/ -V
+vps
+exit
+ssh vps
+ssh federicovps
+vps
+irb
+exit
+sudo gem install kanwei-algorithms
+exit
+ssh vps
+ssh federicovps
+vps
+irb
+sudo gem install kanwei-algorithms
+rmdir foo
+mkdir foo; chmod a-wrx foo; sudo chown root foo; ls -l; rmdir foo
+mkdir foo; chmod a-wrx foo; sudo chown root foo; ls -l; rm -rf foo
+man rmdir
+mk
+man rm
+mkdir foo; chmod a-wrx foo; 
+ll
+ls -a
+su
+ls -l
+rm -d foo
+ls
+exit
+$ 
+gd 40d7019b1f6..HEAD^^^
+cd tcpsocket/
+gd 40d7019b1f6 gethostbyname_spec.rb
+gst
+ls
+rm the\ canonical\ name\ as\ first\ value\"\ do 
+rake spec:update
+git log
+msr 1.8/library/socket/tcpsocket/
+git push origin master
+cd 1.8/library/
+msr logger/logger/new_spec.rb 
+cd logger/
+msr logger/new_spec.rb 
+msr logger/add_spec.rb 
+ruby -d -e 'p Thread.abort_on_exception'
+ps
+vps
+186 -d -e 'p Thread.abort_on_exception'
+187 -d -e 'p Thread.abort_on_exception'
+ruby-1.9 -d -e 'p Thread.abort_on_exception'
+wget http://www.jamplay.com/images/supp_content/2337.mp3
+exit
+irb
+exit
+187 -d -e 'p Thread.abort_on_exception'
+ruby-1.9 -d -e 'p Thread.abort_on_exception'
+wget http://www.jamplay.com/images/supp_content/2337.mp3
+cd rbx
+rake spec:update
+msr spec/ruby/1.8/library/socket/
+vps
+exit
+irb
+cd programacion/
+mkdir vom
+cd vom
+git init
+touch README
+git add README
+git commit -m "First commit"
+  git remote add origin git@github.com:febuiles/vom.git
+git push origin master
+mkdir foo; chmod a-wrx foo; 
+ll
+ls -a
+su
+ls -l
+rm -d foo
+ls
+exit
+$ 
+gd 40d7019b1f6..HEAD^^^
+cd tcpsocket/
+gd 40d7019b1f6 gethostbyname_spec.rb
+gst
+ls
+rm the\ canonical\ name\ as\ first\ value\"\ do 
+msr 1.8/library/socket/tcpsocket/
+cd 1.8/library/
+msr logger/logger/new_spec.rb 
+cd logger/
+msr logger/new_spec.rb 
+msr logger/add_spec.rb 
+/Library/Ruby/Gems/1.8/gems/mspec-1.1.1/lib/mspec/runner/mspec.rb:48:in `files'
+msr add_spec.rb 
+rake spec:udpate
+rake spec:update
+.dotest/patch:74: trailing whitespace.
+git log
+git rebase origin
+git push origin master
+msr close_spec 
+mv close_spec close_spec.rb
+Conting objects: 17, done.
+msr close_spec.rb 
+msr datetime_format_spec.rb 
+cd programacion/
+cd linkroll/k
+cd linkroll/
+ls
+rake stats
+exit
+cd linkroll/k
+cd linkroll/
+rake stats
+date
+man 2 date
+man 3 date
+cd programacion/
+git clone git@github.com:febuiles/algorithms.git
+cd mspec/
+git pull origin master
+rake spec
+rake build
+rake -T
+rake gem
+cat pec
+cd pkg
+ls
+rm mspec-1.0.0.gem 
+sudo gem install mspec --local
+exit
+rake gem
+cat pec
+cd pkg
+rm mspec-1.0.0.gem 
+sudo gem install mspec --local
+exit
+cd prgo
+cd programacion/
+ls > datos
+cat datos
+cd ..
+rm 2337.mp3 
+cd dir 
+ls
+rm -rf dir

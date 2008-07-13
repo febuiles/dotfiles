@@ -36,6 +36,7 @@ alias msj='mspec -tjruby'
 alias ss='ruby script/server'
 alias sg='ruby script/generate'
 alias sc='ruby script/console'
+alias sp='ruby script/plugin'
 
 alias vps='ssh federico@vps'
 
