@@ -1,5 +1,0 @@
-def reload
-  files = Dir["lib/**/*.rb"]
-  reload!
-  files.each { |file| load file}
-end
