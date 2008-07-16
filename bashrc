@@ -10,7 +10,7 @@ if [ "$TERM" != "dumb" ]; then
 fi
 
 export EDITOR="emacsclient"
-
+export ANT_HOME=/usr/local/ant
 alias ls='ls -G'
 alias l='ls'
 alias e='emacs'
@@ -40,8 +40,7 @@ alias sp='ruby script/plugin'
 
 alias vps='ssh federico@vps'
 
-export PATH=$PATH:/usr/local/ruby1.9/bin:/Users/federicobuiles/programacion/jruby/bin:/Users/federicobuiles/programacion/rbx/shotgun:/Users/federicobuiles/programacion/ruby-1.8/bin:/Users/federicobuiles/programacion/mri/build/*/bin:/Users/federicobuiles/programacion/mri/build/p114/bin:/Users/federicobuiles/programacion/mri/build/1.8.7/bin:/Users/federicobuiles/programacion/mri/build/trunk/bin:/Users/federicobuiles/programacion/mri/build/230/bin:/Users/federicobuiles/programacion/mri/build/1.8.6/bin:/Users/federicobuiles/programacion/mri/build/186/bin:/Users/federicobuiles/programacion/mri/build/187/bin
-
+export PATH=$PATH:/home/federico/programacion/jruby/bin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin
 
 
 
