@@ -20,7 +20,7 @@ alias m='mate'
 
 alias commit='git commit -v'
 alias pull='git pull'
-alias push='git push origin master'
+alias gp='git push origin master'
 alias gc='git checkout'
 alias gb='git branch -av'
 alias gd='git diff'
@@ -39,8 +39,9 @@ alias sc='ruby script/console'
 alias sp='ruby script/plugin'
 
 alias vps='ssh federico@vps'
+alias vom='ssh vom@vom'
 
-export PATH=$PATH:/home/federico/programacion/jruby/bin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin
+export PATH=$PATH:/home/federico/programacion/jruby/bin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin
 
 
 
