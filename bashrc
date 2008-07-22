@@ -41,6 +41,10 @@ alias sp='ruby script/plugin'
 alias vps='ssh federico@vps'
 alias vom='ssh vom@vom'
 
+alias rs='rake spec'      
+alias cpd='cap deploy'
+
+
 export PATH=$PATH:/home/federico/programacion/jruby/bin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin
 
 
