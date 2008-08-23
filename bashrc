@@ -26,6 +26,8 @@ alias gb='git branch -av'
 alias gd='git diff'
 alias gst='git status'
 alias gfp='git-format-patch'
+alias gbb='git bisect bad'
+alias gbg='git bisect good'
 alias ci='./bin/mspec ci'
 
 alias vi='emacsclient'
@@ -40,12 +42,13 @@ alias sp='ruby script/plugin'
 
 alias vps='ssh federico@vps'
 alias vom='ssh vom@vom'
+alias prog='cd /Users/federico/programacion'
+alias reload='. /Users/federico/.bashrc'
 
-alias rs='rake spec'      
 alias cpd='cap deploy'
+alias rs='rake spec'      
 
-
-export PATH=$PATH:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin:/Users/federico/programacion/buildrb/1.9/bin:/sw/bin
+export PATH=$PATH:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin:/Users/federico/programacion/buildrb/1.9/bin:/sw/bin:/usr/local/libexec/git-core/
 
 
 
