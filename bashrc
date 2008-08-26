@@ -6,7 +6,7 @@ shopt -s histappend
 
 if [ "$TERM" != "dumb" ]; then
     alias ls='ls --color'
-    export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \n\[\e[33m\]\w\[\e[0m\]\n$ '
+    export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \n\[\e[33m\]\w\033[36m\] `git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\/`\[\033[00m\]\n$ '
 fi
 
 export EDITOR="emacsclient"
