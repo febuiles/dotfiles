@@ -3,3 +3,6 @@
 	email = federico.builes@gmail.com
 [alias]
 	lh = !git-lh
+[github]
+	user = febuiles
+	token = 1948a85f5274af72019dd0964d15044f
