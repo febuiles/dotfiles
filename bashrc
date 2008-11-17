@@ -50,7 +50,9 @@ alias rs='rake spec'
 
 export PATH=$PATH:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin:/Users/federico/programacion/buildrb/1.9/bin:/sw/bin:/usr/local/libexec/git-core/:/home/federico/programacion/buildrb/head/bin
 
-
+function pless {
+  pygmentize $1 | less -r
+}
 
 
 
