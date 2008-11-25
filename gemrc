@@ -1,0 +1,8 @@
+gem: --no-ri --no-rdoc
+verbose: true
+update_sources: true
+sources: 
+- http://gems.rubyforge.org/
+- http://gems.github.com
+
+
