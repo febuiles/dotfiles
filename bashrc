@@ -5,12 +5,13 @@ export HISTSIZE=10000
 shopt -s histappend
 
 if [ "$TERM" != "dumb" ]; then
-    alias ls='ls -G'
     export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \n\[\e[33m\]\w\033[36m\] `git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\/`\[\033[00m\]\n$ '
+
 fi
 
 export EDITOR="emacsclient"
 export ANT_HOME=/usr/local/ant
+export ACK_OPTIONS='--no-color'
 alias ls='ls -G'
 alias l='ls'
 alias e='emacs'
@@ -30,7 +31,8 @@ alias gbb='git bisect bad'
 alias gbg='git bisect good'
 alias ci='./bin/mspec ci'
 
-alias vi='emacsclient'
+alias emacs='emacsclient --no-wait'
+alias vi='emacsclient --no-wait'        
 alias msr='mspec -tr'
 alias msx='mspec'
 alias msj='mspec -tjruby'
@@ -53,7 +55,3 @@ export PATH=$PATH:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/feder
 function pless {
   pygmentize $1 | less -r
 }
-
-
-
-
