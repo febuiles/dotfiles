@@ -21,7 +21,7 @@ alias m='mate'
 
 alias commit='git commit -v'
 alias pull='git pull'
-alias gp='git push origin master'
+#alias gp='git push origin master'
 alias gc='git checkout'
 alias gb='git branch -av'
 alias gd='git diff'
@@ -53,5 +53,10 @@ alias rs='rake spec'
 export PATH=$PATH:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin:/Users/federico/programacion/buildrb/1.9/bin:/sw/bin:/usr/local/libexec/git-core/:/home/federico/programacion/buildrb/head/bin
 
 function pless {
-  pygmentize $1 | less -r
+    pygmentize $1 | less -r
+}
+
+function gp {
+    current_branch=`git branch | grep \* | awk '{print $2}'`
+    git push origin $current_branch
 }
