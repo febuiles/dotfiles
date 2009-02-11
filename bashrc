@@ -31,7 +31,7 @@ alias gbb='git bisect bad'
 alias gbg='git bisect good'
 alias ci='./bin/mspec ci'
 
-alias emacs='emacsclient --no-wait'
+#alias emacs='emacsclient --no-wait'
 alias vi='emacsclient --no-wait'        
 alias msr='mspec -tr'
 alias msx='mspec'
