@@ -23,7 +23,7 @@ alias commit='git commit -v'
 alias pull='git pull'
 #alias gp='git push origin master'
 alias gc='git checkout'
-alias gb='git branch -av'
+alias gb='git branch -v'
 alias gd='git diff'
 alias gst='git status'
 alias gfp='git-format-patch'
@@ -50,7 +50,7 @@ alias reload='. /Users/federico/.bashrc'
 alias cpd='cap deploy'
 alias rs='rake spec'      
 
-export PATH=$PATH:/Users/federico/programacion/jruby/bin:/usr/texbin:/usr/local/bin:/usr/local/ant/bin:/sw/bin
+export PATH=$PATH:/Users/federico/programacion/jruby/jruby/bin:/usr/texbin:/usr/local/bin:/usr/local/ant/bin:/sw/bin
 
 function pless {
     pygmentize $1 | less -r
