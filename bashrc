@@ -29,6 +29,8 @@ alias gst='git status'
 alias gfp='git-format-patch'
 alias gbb='git bisect bad'
 alias gbg='git bisect good'
+alias gl='git log'
+
 alias ci='./bin/mspec ci'
 
 #alias emacs='emacsclient --no-wait'
