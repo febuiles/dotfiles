@@ -23,15 +23,17 @@ alias commit='git commit -v'
 alias pull='git pull'
 #alias gp='git push origin master'
 alias gc='git checkout'
-alias gb='git branch -av'
+alias gb='git branch -v'
 alias gd='git diff'
 alias gst='git status'
 alias gfp='git-format-patch'
 alias gbb='git bisect bad'
 alias gbg='git bisect good'
+alias gl='git log'
+
 alias ci='./bin/mspec ci'
 
-alias emacs='emacsclient --no-wait'
+#alias emacs='emacsclient --no-wait'
 alias vi='emacsclient --no-wait'        
 alias msr='mspec -tr'
 alias msx='mspec'
@@ -52,7 +54,7 @@ alias rs='rake spec'
 
 alias gt='nosetests --with-gae'
 
-export PATH=$PATH:/sw/bin/:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin:/Users/federico/programacion/buildrb/1.9/bin:/sw/bin:/usr/local/libexec/git-core/:/home/federico/programacion/buildrb/head/bin:/Library/PostgreSQL/8.3/bin
+export PATH=$PATH:/sw/bin/:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin:/Users/federico/programacion/buildrb/1.9/bin:/sw/bin:/usr/local/libexec/git-core/
 
 function pless {
     pygmentize $1 | less -r
