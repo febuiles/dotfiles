@@ -48,9 +48,11 @@ alias prog='cd /Users/federico/programacion'
 alias reload='. /Users/federico/.bashrc'
 
 alias cpd='cap deploy'
-alias rs='rake spec'      
+alias rs='rake spec'
 
-export PATH=$PATH:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin:/Users/federico/programacion/buildrb/1.9/bin:/sw/bin:/usr/local/libexec/git-core/:/home/federico/programacion/buildrb/head/bin:/Library/PostgreSQL/8.3/bin
+alias gt='nosetests --with-gae'
+
+export PATH=$PATH:/sw/bin/:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin:/Users/federico/programacion/buildrb/1.9/bin:/sw/bin:/usr/local/libexec/git-core/:/home/federico/programacion/buildrb/head/bin:/Library/PostgreSQL/8.3/bin
 
 function pless {
     pygmentize $1 | less -r
