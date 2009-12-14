@@ -15,13 +15,12 @@ export ACK_OPTIONS='--no-color'
 alias ls='ls -G'
 alias l='ls'
 alias e='emacs'
-
 alias sd='svn diff'
 alias m='mate'
 
 alias commit='git commit -v'
+alias gpl='git pull origin master'
 alias pull='git pull'
-#alias gp='git push origin master'
 alias gc='git checkout'
 alias gb='git branch -v'
 alias gd='git diff'
@@ -34,7 +33,7 @@ alias gl='git log'
 alias ci='./bin/mspec ci'
 
 #alias emacs='emacsclient --no-wait'
-alias vi='emacsclient --no-wait'        
+alias vi='emacsclient --no-wait'
 alias msr='mspec -tr'
 alias msx='mspec'
 alias msj='mspec -tjruby'
@@ -54,7 +53,7 @@ alias rs='rake spec'
 
 alias gt='nosetests --with-gae'
 
-export PATH=$PATH:/sw/bin/:/home/federico/programacion/jruby/bin:/usr/texbin:/Users/federico/programacion/rbx/shotgun:/usr/local/bin:/usr/local/ant/bin:/Users/federico/programacion/buildrb/1.8.7/bin:/Users/federico/programacion/buildrb/1.9/bin:/sw/bin:/usr/local/libexec/git-core/
+export PATH=$PATH:/usr/local/bin:/usr/local/libexec/git-core/
 
 function pless {
     pygmentize $1 | less -r
@@ -64,3 +63,6 @@ function gp {
     current_branch=`git branch | grep \* | awk '{print $2}'`
     git push origin $current_branch
 }
+
+AMAZON_ACCESS_KEY_ID='AKIAJM42B3P6P7XISIYA'
+AMAZON_SECRET_ACCESS_KEY='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'
