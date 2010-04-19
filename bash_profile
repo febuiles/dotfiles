@@ -1,1 +1,1 @@
-. .bashrc
+. /Users/federico/.bashrc

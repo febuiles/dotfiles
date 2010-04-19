@@ -12,6 +12,7 @@ fi
 export EDITOR="emacsclient"
 export ANT_HOME=/usr/local/ant
 export ACK_OPTIONS='--no-color'
+export RUBYOPT="-rubygems"
 alias ls='ls -G'
 alias l='ls'
 alias e='emacs'
@@ -42,6 +43,7 @@ alias ss='ruby script/server'
 alias sg='ruby script/generate'
 alias sc='ruby script/console'
 alias sp='ruby script/plugin'
+alias s='shotgun'
 
 alias vps='ssh federico@vps'
 alias vom='ssh vom@vom'
