@@ -52,10 +52,11 @@ alias reload='. /Users/federico/.bashrc'
 
 alias cpd='cap deploy'
 alias rs='rake spec'
+alias hd='git push heroku master'
 
 alias gt='nosetests --with-gae'
 
-export PATH=$PATH:/usr/local/bin:/usr/local/libexec/git-core/
+export PATH=$PATH:/usr/local/bin:/usr/local/libexec/git-core/:/usr/local/texlive/2009basic/bin/universal-darwin
 
 function pless {
     pygmentize $1 | less -r
