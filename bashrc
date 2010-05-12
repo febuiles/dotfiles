@@ -30,6 +30,7 @@ alias gfp='git-format-patch'
 alias gbb='git bisect bad'
 alias gbg='git bisect good'
 alias gl='git log'
+alias lola='git log --graph --decorate --pretty=oneline --abbrev-commit'
 
 alias ci='./bin/mspec ci'
 
