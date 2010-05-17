@@ -73,3 +73,7 @@ AMAZON_SECRET_ACCESS_KEY='Yu7HcKVYPRCAD6c/EtcFRWA7/EHqz279ZaxiE5J9'
 
 # <3 RVM
 if [[ -s /Users/federico/.rvm/scripts/rvm ]] ; then source /Users/federico/.rvm/scripts/rvm ; fi
+
+# Free some mem.
+alias free='sh -c "du -sx /System/ &> /dev/null"'
+
