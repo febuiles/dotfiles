@@ -5,7 +5,7 @@ export HISTSIZE=10000
 shopt -s histappend
 
 if [ "$TERM" != "dumb" ]; then
-    export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \n\[\e[33m\]\w\033[36m\] `git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\/`\[\033[00m\]\n$ '
+    export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h\n\[\e[33m\]\w\033[36m\] `git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\/`\[\033[00m\]\n$ '
 
 fi
 
@@ -58,7 +58,7 @@ alias hd='git push heroku master'
 alias gt='nosetests --with-gae'
 
 export PATH=$PATH:/usr/local/bin:/usr/local/libexec/git-core/:/usr/local/texlive/2009basic/bin/universal-darwin
-
+export ADAPTER="sqlite3"
 function pless {
     pygmentize $1 | less -r
 }
