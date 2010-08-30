@@ -68,9 +68,6 @@ function gp {
     git push origin $current_branch
 }
 
-AMAZON_ACCESS_KEY_ID='AKIAJM42B3P6P7XISIYA'
-AMAZON_SECRET_ACCESS_KEY='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'
-
 # <3 RVM
 if [[ -s /Users/federico/.rvm/scripts/rvm ]] ; then source /Users/federico/.rvm/scripts/rvm ; fi
 
