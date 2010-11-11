@@ -27,3 +27,5 @@ alias mig='rake db:migrate'
 alias cpd='cap deploy'
 alias rs='rake spec'
 alias hd='git push heroku master'
+
+alias free='du -sx /System/ &> /dev/null'
