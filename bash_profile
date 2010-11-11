@@ -1,18 +1,17 @@
-export PS1='\u@\h \w `git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\/` \n$ '
+export PS1='\u@\h \w$(__git_ps1)\n$ '
 
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
 
 if [ "$TERM" != "dumb" ]; then
-    export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h\n\[\e[33m\]\w\033[36m\] `git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\/`\[\033[00m\]\n$ '
-
+    export PS1='\n\[\e[33m\]\w\033[36m\]$(__git_ps1)\[\033[00m\]\n$ '
 fi
 
 export EDITOR="emacsclient"
 export ANT_HOME=/usr/local/ant
 export ACK_OPTIONS='--no-color'
-export RUBYOPT="-rubygems"
+# export RUBYOPT="-rubygems"
 
 export PATH=$PATH:/usr/local/bin:/usr/local/libexec/git-core/:/usr/local/texlive/2009basic/bin/universal-darwin
 
@@ -31,4 +30,5 @@ if [[ -s /Users/federico/.rvm/scripts/rvm ]] ; then source /Users/federico/.rvm/
 # Free some mem.
 alias free='sh -c "du -sx /System/ &> /dev/null"'
 
-. /Users/federico/.alias
+source /Users/federico/.alias
+source /Users/federico/.git-completion.sh
