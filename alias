@@ -11,7 +11,7 @@ alias gst='git status'
 alias gfp='git-format-patch'
 alias gbb='git bisect bad'
 alias gbg='git bisect good'
-alias gl='git log'
+alias gl='git --no-pager log --pretty=format:"%h %ad | %s [%an]" --graph --date=short --max-count=15'
 alias git=hub
 
 alias emacs='emacsclient --no-wait'
