@@ -10,3 +10,6 @@
 	status = auto
 	log = auto
 	ui = auto
+[pivotal]
+	full-name = Federico Builes
+	api-token = be89411978b1ce591505fafc96b45365
