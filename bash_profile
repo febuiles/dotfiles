@@ -2,7 +2,8 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 export PS1='\n\[\e[33m\]\w\033[36m\]$(parse_git_branch)\[\033[00m\]\n$ '
 export EDITOR="emacsclient"
-export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/bin:/usr/local/bin:/Applications/Emacs.app/Contents/MacOS/bin
+export NODE_PATH=/usr/local/lib/node
 shopt -s histappend
 
 
