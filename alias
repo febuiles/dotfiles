@@ -17,6 +17,7 @@ alias gr='git reset HEAD --hard'
 
 alias emacs='emacsclient --no-wait'
 alias vi='emacsclient --no-wait'
+alias git='hub'
 
 alias ss='rails server'
 alias sg='rails generate'
@@ -26,7 +27,6 @@ alias b='bundle'
 alias s='shotgun'
 alias mig='rake db:migrate'
 alias ww='watchr .watchr'
-alias irb='pry'
 
 alias cpd='cap deploy'
 alias rs='bundle exec rake spec'
