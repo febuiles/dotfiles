@@ -2,10 +2,11 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 export PS1='\n\[\e[33m\]\w\033[36m\]$(parse_git_branch)\[\033[00m\]\n$ '
 export EDITOR="emacsclient"
-export PATH=$PATH:/usr/bin:/usr/local/bin:/Applications/Emacs.app/Contents/MacOS/bin
-export NODE_PATH=/usr/local/lib/node
-shopt -s histappend
+export PATH=$PATH:/usr/local/bin:/usr/bin:/usr/local/sbin:/Applications/Emacs.app/Contents/MacOS/bin:/Users/federico/Library/Haskell/bin
 
+export NODE_PATH=/usr/local/lib/node
+export LANG="en_US.UTF-8"
+shopt -s histappend
 
 function gp {
     current_branch=`git branch | grep \* | awk '{print $2}'`
@@ -32,6 +33,11 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/(\1$(parse_git_dirty))/"
 }
 
+function sgm {
+    rails g migration $@ | grep create  | awk '{print $3}' | xargs $EDITOR
+}
+
+
 # <3 RVM
 if [[ -s /Users/federico/.rvm/scripts/rvm ]] ; then source /Users/federico/.rvm/scripts/rvm ; fi
 
@@ -40,3 +46,4 @@ source /Users/federico/.alias
 if [[ -f "$HOME/.amazon_keys" ]]; then
     source "$HOME/.amazon_keys";
 fi
+

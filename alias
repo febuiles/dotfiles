@@ -27,9 +27,12 @@ alias b='bundle'
 alias s='shotgun'
 alias mig='rake db:migrate'
 alias ww='watchr .watchr'
+alias fs='rspec spec/fast'
 
 alias cpd='cap deploy'
 alias rs='bundle exec rake spec'
 alias hd='git push heroku master'
+alias hc='heroku run console'
 
 alias free='du -sx /System/ &> /dev/null'
+
