@@ -38,6 +38,13 @@ function sgm {
     rails g migration $@ | grep create  | awk '{print $3}' | xargs $EDITOR
 }
 
+function rr()
+{
+    while [ ! -f Gemfile ] && [ `pwd` != $HOME ]
+    do
+        pushd ..                # don't confuse emacs
+    done
+}
 
 # <3 RVM
 if [[ -s /Users/federico/.rvm/scripts/rvm ]] ; then source /Users/federico/.rvm/scripts/rvm ; fi
