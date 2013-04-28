@@ -42,7 +42,7 @@ function rr()
 {
     while [ ! -f Gemfile ] && [ `pwd` != $HOME ]
     do
-        pushd ..                # don't confuse emacs
+        cd ..
     done
 }
 
