@@ -2,7 +2,7 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 export PS1='\n\[\e[33m\]\w\033[36m\]$(parse_git_branch)\[\033[00m\]\n$ '
 export EDITOR="emacsclient"
-export PATH=$PATH:/usr/local/bin:/usr/bin:/usr/local/sbin:/Applications/Emacs.app/Contents/MacOS/bin:/Users/federico/Library/Haskell/bin
+export PATH=$PATH:/usr/local/bin:/usr/bin:/usr/local/sbin:/Applications/Emacs.app/Contents/MacOS/bin
 export RUBY_GC_MALLOC_LIMIT=60000000
 export RUBY_FREE_MIN=200000
 export NODE_PATH=/usr/local/lib/node
@@ -38,8 +38,7 @@ function sgm {
     rails g migration $@ | grep create  | awk '{print $3}' | xargs $EDITOR
 }
 
-function rr()
-{
+function rr {
     while [ ! -f Gemfile ] && [ `pwd` != $HOME ]
     do
         cd ..
@@ -50,8 +49,3 @@ function rr()
 if [[ -s /Users/federico/.rvm/scripts/rvm ]] ; then source /Users/federico/.rvm/scripts/rvm ; fi
 
 source /Users/federico/.alias
-
-if [[ -f "$HOME/.amazon_keys" ]]; then
-    source "$HOME/.amazon_keys";
-fi
-
