@@ -28,6 +28,9 @@ alias pa='powder applog &'
 alias b='bundle'
 alias mig='rake db:migrate db:test:prepare'
 
+alias gob='go build'
+alias god='godoc'
+
 alias cpd='gp && cap deploy'
 alias rs='bundle exec rake spec'
 alias hd='git push heroku master && gp'
