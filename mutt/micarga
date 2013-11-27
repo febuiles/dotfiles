@@ -1,0 +1,4 @@
+set folder      = ~/Mail/micarga
+set spoolfile   = "+INBOX"
+set mbox        = "+[Gmail]/All Mail"
+set postponed   = "+[Gmail]/Drafts"
