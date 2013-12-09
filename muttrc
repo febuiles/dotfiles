@@ -2,27 +2,18 @@ set mbox_type   = Maildir
 set sendmail    = /usr/bin/msmtp
 
 unset record
-
+unset markers
 source ~/.mutt/micarga
 
 folder-hook micarga/* source ~/.mutt/micarga
 folder-hook mheroin/* source ~/.mutt/mheroin
 folder-hook gmail/* source ~/.mutt/gmail
 
-macro index <F2>  "<change-folder> =../micarga/INBOX<enter>"  "micarga"
-macro index <F3>  "<change-folder> =../mheroin/INBOX<enter>"  "mheroin"
-macro index <F4>  "<change-folder> =../gmail/INBOX<enter>"  "gmail"
+macro index <F1>  "<change-folder> =../micarga/INBOX<enter>"  "micarga"
+macro index <F2>  "<change-folder> =../mheroin/INBOX<enter>"  "mheroin"
+macro index <F3>  "<change-folder> =../gmail/INBOX<enter>"  "gmail"
 
-mailboxes +INBOX
-
-macro index S \
-    "<save-message>+[Gmail]/Spam<enter>" \
-    "mark message as spam"
-
-macro index a \
-    "<save-message>+[Gmail]/Spam<enter>" \
-    "mark message as spam"
-
+mailboxes +INBOX "=mu-search"
 
 # main options
 set realname   = "Federico Builes"
@@ -31,11 +22,11 @@ alternates federico@mheroin.com federico@micarga.com
 set mail_check = 0
 set envelope_from
 
-unset move
-set delete
-unset confirmappend
-set quit
-unset mark_old
+unset move           # gmail does that
+set delete           # don't ask, just do
+unset confirmappend  # don't ask, just do!
+set quit             # don't ask, just do!!
+unset mark_old       # read/new is good enough for me
 
 # sort/threading
 set sort     = threads
@@ -48,19 +39,31 @@ unset mime_forward
 set forward_format = "Fwd: %s"
 set include
 set forward_quote
+unset metoo
+unset reply_self
+set fast_reply
 
 macro index,pager a "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
 
-ignore *
-unignore from: to: cc: date: subject:
-hdr_order from: to: cc: date: subject:
+ignore *                               # first, ignore all headers
+unignore from: to: cc: date: subject:  # then, show only these
+hdr_order from: to: cc: date: subject: # and in this order
+
+# search
+macro index "\Cs" "<enter-command>unset wait_key<enter><shell-escape>read -p'Query: ' x; \
+      mu find --clearlinks --linksdir ~/Mail/mu-search --format links \$x<enter>\
+      <change-folder-readonly>~/Mail/mu-search\n" "mu find"
+macro index "<Esc>s" "<change-folder-readonly>~/Mail/mu-search\n" "display mu-find results"
 
 
+# general-doesn't-fit stuff
 color normal     color188 color237
 color error      color115 color236
 color markers    color142 color238
 color tilde      color108 color237
 color status     color144 color234
+
+# index stuff
 color indicator  color108 color236
 color tree       color109 color237
 color index      color188 color237 ~A
@@ -72,6 +75,17 @@ color index      color174 color237 ~D
 # header stuff
 color hdrdefault color223 color237
 color header     color223 color237 "^Subject"
+
+# gpg stuff
+color body       color188 color237 "^gpg: Good signature.*"
+color body       color115 color236 "^gpg: BAD signature.*"
+color body       color174 color237 "^gpg: Can't check signature.*"
+color body       color174 color237 "^-----BEGIN PGP SIGNED MESSAGE-----"
+color body       color174 color237 "^-----BEGIN PGP SIGNATURE-----"
+color body       color174 color237 "^-----END PGP SIGNED MESSAGE-----"
+color body       color174 color237 "^-----END PGP SIGNATURE-----"
+color body       color174 color237 "^Version: GnuPG.*"
+color body       color174 color237 "^Comment: .*"
 
 # url, email and web stuff
 color body       color174 color237 "(finger|ftp|http|https|news|telnet)://[^ >]*"
