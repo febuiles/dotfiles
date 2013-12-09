@@ -34,7 +34,7 @@ alias gob='go build'
 alias god='godoc'
 
 alias cpd='gp && rs && cap production deploy'
-alias rs='rake db:schema:load && bundle exec rake spec'
+alias rs='RAILS_ENV=test rake db:schema:load && bundle exec rake spec'
 alias hd='git push heroku master && gp'
 alias hc='heroku run console'
 alias hmig='heroku run rake db:migrate'
