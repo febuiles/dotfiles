@@ -1,3 +1,6 @@
+source ~/.alias
+source ~/.git-prompt.sh
+
 export HISTCONTROL=erasedups:ignorespace
 export HISTSIZE=20000
 export PS1='\n\[\e[33m\]\w\033[36m\]$(__git_ps1 " (%s)")\[\033[00m\]\n$ '
@@ -7,19 +10,14 @@ export RUBY_GC_MALLOC_LIMIT=60000000
 export RUBY_FREE_MIN=200000
 export NODE_PATH=/usr/local/lib/node
 export LANG="en_US.UTF-8"
-shopt -s histappend
 export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+export PATH=$PATH:$HOME/.rvm/bin
 
-function gp {
-    git push origin `__git_ps1 "%s"`
-
-}
+shopt -s histappend
 
 function sgm {
     rails g migration $@ | grep create  | awk '{print $3}' | xargs $EDITOR
 }
 
 # <3 RVM
-if [[ -s /Users/federico/.rvm/scripts/rvm ]] ; then source /Users/federico/.rvm/scripts/rvm ; fi
-
-source /Users/federico/.alias
+if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi

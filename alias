@@ -3,6 +3,7 @@ alias l='ls'
 alias e='emacs'
 alias vm='mv'
 
+alias gp='git push origin `__git_ps1 "%s"`'
 alias gpl='git pull --rebase'
 alias pull='git pull'
 alias gc='git checkout'
