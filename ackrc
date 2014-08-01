@@ -7,9 +7,7 @@
 --ignore-dir=log/
 --ignore-dir=tmp/
 
---type-add=ruby=.haml
---type-add=ruby=.ru
---type-add=css=.sass
---type-add=css=.scss
+--type-add=ruby=.haml,.ru
+--type-add=css=.sass,.scss
 --type-add=js=.coffee
 --type-set=markdown=.markdown
