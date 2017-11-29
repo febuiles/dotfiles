@@ -12,7 +12,10 @@ export NODE_PATH=/usr/local/lib/node
 export LANG="en_US.UTF-8"
 export GOPATH=~/.go/
 export PATH=$PATH:$HOME/.rvm/bin:/usr/local/opt/go/libexec/bin:$GOPATH/bin
+export CW_PROJECTS=/Users/cw1880/projects
+
 shopt -s histappend
+
 
 function sgm {
     rails g migration $@ | grep create  | awk '{print $3}' | xargs $EDITOR
