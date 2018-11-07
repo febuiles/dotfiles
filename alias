@@ -50,5 +50,3 @@ alias rs='bundle exec rake spec'
 alias hd='gp; git push heroku master &'
 alias hc='heroku run console'
 alias hmig='heroku run rake db:migrate'
-
-alias lol='echo "locale = en_us" > /Applications/League\ of\ Legends.app/Contents/LoL/RADS/system/locale.cfg && open /Applications/League\ of\ Legends.app/'
