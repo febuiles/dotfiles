@@ -3,9 +3,8 @@
 
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
-
-# font pango:DejaVu Sans Mono 12
+set $mod Mod1
+font pango:DejaVu Sans Mono 12
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -16,10 +15,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# dmenu
+bindsym Mod4+space exec dmenu_run
 
 # change focus
 bindsym $mod+j focus left
@@ -28,10 +25,12 @@ bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
 bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+bindsym $mod+Left focus left
 bindsym $mod+Right focus right
+bindsym $mod+bracketleft focus left
+bindsym $mod+bracketright focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -49,21 +48,18 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+shift+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+w layout tabbed
+bindsym $mod+Shift+t layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -71,11 +67,11 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $ws1 "1: "
-set $ws2 "2: "
-set $ws3 "3: "
-set $ws4 "4: "
-assign [class="Chromium-browser"] $ws1
+set $ws1 "F"
+set $ws2 "C"
+set $ws3 "T"
+set $ws4 "S"
+assign [class="Firefox"] $ws1
 assign [class="Emacs"] $ws2
 assign [class="Slack"] $ws4
 
@@ -142,8 +138,6 @@ bar {
         status_command i3status
 }
 
-bindsym $mod+space exec dmenu_run
-
 # Pulse Audio controls
 bindsym Mod1+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym Mod1+XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
@@ -159,10 +153,8 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# Background
-exec_always feh --bg-scale /home/federico/Pictures/wallpaper.jpg
-
-exec chromium-browser
+exec xmodmap /home/federico/.xmodmap
+exec firefox
 exec emacs
 exec slack
 exec xbindkeys
