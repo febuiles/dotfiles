@@ -154,7 +154,7 @@ bindsym $mod + XF86AudioPause exec playerctl pause
 bindsym $mod + XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-exec xmodmap /home/federico/.xmodmap
+setxkbmap -layout us -option ctrl:nocaps
 exec firefox
 exec emacs
 exec slack
