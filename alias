@@ -41,3 +41,16 @@ alias nb='jupyter notebook'
 
 alias cpd='gp && cap production deploy'
 alias rs='bundle exec rake spec'
+
+
+# platform specific
+platform=$(uname)
+
+case $platform in
+    "Linux")
+        alias xclip='xclip -selection clipboard'
+        ;;
+    "Darwin")
+        # mac-specific stuff
+        ;;
+esac
