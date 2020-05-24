@@ -48,6 +48,7 @@ platform=$(uname)
 case $platform in
     "Linux")
         alias xclip='xclip -selection clipboard'
+        alias vim='emacsclient --no-wait'
         ;;
     "Darwin")
         alias vi='emacsclient --no-wait'
