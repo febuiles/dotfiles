@@ -1,0 +1,19 @@
+# Handle all the handling of virtual environments here.
+
+function load_pyenv {
+    if command -v pyenv 1>/dev/null 2>&1; then
+        eval "$(pyenv init -)"
+        eval "$(pyenv virtualenv-init -)"
+    fi
+}
+
+function load_nix() {
+    if [ -e /home/federico/.nix-profile/etc/profile.d/nix.sh ]; then
+        source $HOME/.nix-profile/etc/profile.d/nix.sh
+    fi
+}
+
+function load_rvm() {
+    export PATH="$PATH:$HOME/.rvm/bin"
+    if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+}
