@@ -67,21 +67,22 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
+set $ws1 ""
+set $ws2 ""
+set $ws3 ""
+set $ws4 ""
+set $ws5 ""
 assign [class="Firefox"] $ws1
 assign [class="Emacs"] $ws2
-assign [class="Slack"] $ws3
-assign [class="Spotify"] $ws4
+assign [class="Riot"] $ws3
+assign [class="Spotify"] $ws5
 
 # switch to workspace
 bindsym Mod11 workspace $ws1
 bindsym Mod12 workspace $ws2
 bindsym Mod13 workspace $ws3
 bindsym Mod14 workspace $ws4
-bindsym Mod15 workspace 5
+bindsym Mod15 workspace $ws5
 bindsym Mod16 workspace 6
 bindsym Mod17 workspace 7
 bindsym Mod18 workspace 8
@@ -152,10 +153,13 @@ bindsym Mod1+XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 bindsym $mod + XF86AudioPlay exec playerctl play
 bindsym $mod + XF86AudioPause exec playerctl pause
 bindsym $mod + XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym $mod + XF86AudioPrev exec playerctl previous
 
-setxkbmap -layout us -option ctrl:nocaps
+exec setxkbmap -layout us -option ctrl:nocaps
+exec xbindkeys
+
 exec firefox
 exec emacs
-exec slack
-exec xbindkeys
+exec riot-desktop
+
+exec spotify
