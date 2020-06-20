@@ -155,7 +155,7 @@ bindsym $mod + XF86AudioPause exec playerctl pause
 bindsym $mod + XF86AudioNext exec playerctl next
 bindsym $mod + XF86AudioPrev exec playerctl previous
 
-exec setxkbmap -layout us -option ctrl:nocaps
+exec setxkbmap -option ctrl:nocaps
 exec xbindkeys
 
 exec firefox
