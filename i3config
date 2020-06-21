@@ -44,28 +44,24 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
-bindsym $mod+h split h
-
-# split in vertical orientation
-bindsym $mod+shift+v split v
+# window split
+bindsym $mod+h split h # horizontal split
+bindsym $mod+shift+v split v # vertical split
 
 # enter fullscreen mode for the focused container
 bindsym $mod+Shift+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+Shift+s layout stacking
-bindsym $mod+Shift+w layout tabbed
-bindsym $mod+Shift+t layout toggle split
-
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# focus the parent container
-bindsym $mod+a focus parent
+# container focus
+bindsym $mod+Shift+a focus parent
+bindsym $mod+Shfit+d focus child
 
-# focus the child container
-#bindsym $mod+d focus child
+# container layout (stacked, tabbed, toggle split)
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+w layout tabbed
+bindsym $mod+Shift+t layout toggle split
 
 set $ws1 ""
 set $ws2 ""
@@ -75,7 +71,6 @@ set $ws5 ""
 assign [class="Firefox"] $ws1
 assign [class="Emacs"] $ws2
 assign [class="Riot"] $ws3
-assign [class="Spotify"] $ws5
 
 # switch to workspace
 bindsym Mod11 workspace $ws1
@@ -111,7 +106,6 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-
         # Pressing left will shrink the window’s width.
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
@@ -134,12 +128,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3status
-}
-
 # Pulse Audio controls
 bindsym F12 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym F11 exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
@@ -155,11 +143,17 @@ bindsym $mod + XF86AudioPause exec playerctl pause
 bindsym $mod + XF86AudioNext exec playerctl next
 bindsym $mod + XF86AudioPrev exec playerctl previous
 
+# setup keyboard
 exec setxkbmap -option ctrl:nocaps
 exec xbindkeys
 
-exec firefox
-exec emacs
-exec riot-desktop
+# always open these
+exec --no-startup-id firefox
+exec --no-startup-id emacs
+exec --no-startup-id riot-desktop
 
-exec spotify
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3status
+}
