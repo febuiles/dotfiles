@@ -24,13 +24,13 @@ alias cd3='cd ../../..'
 alias cd4='cd ../../../..'
 alias cd5='cd ../../../../..'
 
-alias ss='rails server'
-alias sg='rails generate'
-alias sc='rails console'
-alias sp='rails plugin'
+
+alias mig='bundle exec rails db:migrate'
+alias sc='bundle exec rails c'
+alias sg='bundle exec rails generate'
+alias ss='bundle exec rails s'
 alias b='bundle'
-alias mig='rake db:migrate'
-alias tf='find . -name development.log | xargs tail -f'
+
 alias json='python -mjson.tool'
 
 alias p='python3'
