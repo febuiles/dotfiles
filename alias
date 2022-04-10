@@ -31,6 +31,9 @@ alias sg='bundle exec rails generate'
 alias ss='bundle exec rails s'
 alias b='bundle'
 
+alias cb='cargo build'
+alias cr='cargo run'
+
 alias json='python -mjson.tool'
 
 alias p='python3'
