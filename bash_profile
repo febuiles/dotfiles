@@ -1,3 +1,4 @@
+source ~/.git-completion.bash
 source ~/.alias
 source ~/.git-prompt.sh
 source ~/.env
