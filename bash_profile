@@ -1,3 +1,7 @@
+if [ -z "$CODESPACES" ]; then
+    source ~/.git-completion.bash
+fi
+
 source ~/.alias
 source ~/.git-prompt.sh
 source ~/.env
@@ -7,7 +11,6 @@ export HISTSIZE=20000
 shopt -s histappend
 
 if [ -z "$CODESPACES" ]; then
-    source ~/.git-completion.bash
     export PS1='\n\[\e[33m\]\w\033[36m\]$(__git_ps1 " (%s)")\[\033[00m\]\n$ '
     export EDITOR="emacsclient"
     export LANG="en_US.UTF-8"
