@@ -1,5 +1,7 @@
 source ~/.bash_profile
-export PATH=$PATH:/usr/local/bin
-source <(kubectl completion bash)
 
-export CGO_LDFLAGS_ALLOW="^-[Il].*$"
+if [ -z "$CODESPACES" ]; then
+  source <(kubectl completion bash)
+  export CGO_LDFLAGS_ALLOW="^-[Il].*$"
+  export PATH=$PATH:/usr/local/bin
+fi
