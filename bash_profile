@@ -24,3 +24,4 @@ load_pyenv
 # the following to ~/.bash_profile:
 
 eval "$(rbenv init - bash)"
+. "$HOME/.cargo/env"
