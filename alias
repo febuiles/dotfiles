@@ -2,11 +2,12 @@ alias l='ls'
 alias ll='ls -al'
 alias vm='mv'
 alias emacs='emacsclient --no-wait'
+alias git='hub'
 
 alias gp='git push origin `__git_ps1 "%s"`'
 alias gpl='git pull --rebase'
 alias gc='git checkout'
-
+__git_complete gc git_checkout
 alias gcp='git cherry-pick'
 alias gb='git branch -v'
 alias gd='git diff'
@@ -17,18 +18,13 @@ alias gbb='git bisect bad'
 alias gbg='git bisect good'
 alias gl='git --no-pager log --pretty=format:"%h %ad | %s [%an]" --graph --date=short --max-count=15'
 alias gr='git reset HEAD --hard'
-
-if [ -z "$CODESPACES" ]; then
-   alias git='hub'
-   __git_complete gr git_reset
-   __git_complete gc git_checkout
-fi
-
+__git_complete gr git_reset
 alias cd1='cd ..'
 alias cd2='cd ../..'
 alias cd3='cd ../../..'
 alias cd4='cd ../../../..'
 alias cd5='cd ../../../../..'
+
 
 alias mig='bundle exec rails db:migrate'
 alias sc='bundle exec rails c'
