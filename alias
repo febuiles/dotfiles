@@ -36,11 +36,6 @@ alias cb='cargo build'
 alias cr='cargo run'
 
 alias json='python -mjson.tool'
-
-alias p='python3'
-alias nb='jupyter notebook'
-
-alias cpd='gp && cap production deploy'
 alias rs='bundle exec rake spec'
 
 
