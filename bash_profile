@@ -28,3 +28,5 @@ load_pyenv
 
 eval "$(rbenv init - bash)"
 . "$HOME/.cargo/env"
+
+eval "$(nodenv init -)"
