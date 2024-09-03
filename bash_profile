@@ -21,12 +21,8 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/Applications/Emacs.app/Conten
 
 export RUBY_GC_MALLOC_LIMIT=60000000
 
-load_pyenv
-
-# Load rbenv automatically by appending
-# the following to ~/.bash_profile:
-
-eval "$(rbenv init - bash)"
-. "$HOME/.cargo/env"
-
-eval "$(nodenv init -)"
+if [ -d /opt/homebrew/etc/bash_completion.d ]; then
+  for file in /opt/homebrew/etc/bash_completion.d/*; do
+    source "$file"
+  done
+fi

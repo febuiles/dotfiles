@@ -2,7 +2,6 @@ alias l='ls'
 alias ll='ls -al'
 alias vm='mv'
 alias emacs='emacsclient --no-wait'
-alias git='hub'
 
 alias gp='git push origin `__git_ps1 "%s"`'
 alias gpl='git pull --rebase'
