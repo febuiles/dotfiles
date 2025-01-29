@@ -11,8 +11,7 @@ export EDITOR="emacsclient"
 export LANG="en_US.UTF-8"
 
 export GOPATH=~/.go/
-export GOPROXY=https://goproxy.githubapp.com/mod,https://proxy.golang.org/,direct
-export GONOSUMDB='github.com/github/*'
+export GOPROXY=https://proxy.golang.org/,direct
 
 export NODE_PATH=/usr/local/lib/node
 
