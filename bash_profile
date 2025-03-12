@@ -24,3 +24,6 @@ if [ -d /opt/homebrew/etc/bash_completion.d ]; then
     source "$file"
   done
 fi
+
+source $(brew --prefix asdf)/libexec/asdf.sh
+

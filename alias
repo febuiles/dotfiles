@@ -35,8 +35,9 @@ alias cb='cargo build'
 alias cr='cargo run'
 
 alias json='python -mjson.tool'
-alias rs='bundle exec rake spec'
+alias rs='bundle exec rspec'
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # platform specific
 platform=$(uname)
