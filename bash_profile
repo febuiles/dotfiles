@@ -1,6 +1,7 @@
 source ~/.git-completion.bash
 source ~/.alias
 source ~/.git-prompt.sh
+source ~/.env
 
 export HISTCONTROL=erasedups:ignorespace
 export HISTSIZE=20000
@@ -26,4 +27,3 @@ if [ -d /opt/homebrew/etc/bash_completion.d ]; then
 fi
 
 source $(brew --prefix asdf)/libexec/asdf.sh
-
