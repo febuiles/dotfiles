@@ -4,6 +4,6 @@ for file in [^.]* ; do
     if [ $file = "install.sh" ]; then
 	continue
     fi
-    
-    cp "$file" "/$HOME/.$file"
+
+    ln -s "/$HOME/dev/dotfiles/$file" "/$HOME/.$file"
 done
