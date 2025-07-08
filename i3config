@@ -18,6 +18,10 @@ bindsym $mod+Shift+q kill
 # dmenu
 bindsym Mod4+space exec dmenu_run
 
+# emacs
+bindsym $mod+less exec emacsclient -e '(with-current-buffer (window-buffer) (goto-char (point-min)))'
+bindsym $mod+greater exec emacsclient -e '(with-current-buffer (window-buffer) (goto-char (point-max)))'
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -44,9 +48,10 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# window split
-bindsym $mod+h split h # horizontal split
-bindsym $mod+shift+v split v # vertical split
+# horizontal split
+bindsym $mod+Shift+h split h
+# vertical split
+bindsym $mod+Shift+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+Shift+f fullscreen toggle
@@ -64,7 +69,7 @@ bindsym $mod+Shift+w layout tabbed
 bindsym $mod+Shift+t layout toggle split
 
 set $ws1 ""
-set $ws2 ""
+set $ws2 ""
 set $ws3 ""
 set $ws4 ""
 set $ws5 ""
@@ -148,12 +153,13 @@ bindsym $mod + XF86AudioPrev exec playerctl previous
 
 # setup keyboard
 exec setxkbmap -option ctrl:nocaps
+exec setxkbmap -layout us,es -option grp:alt_shift_toggle
+exec xrdb -merge ~/.Xresources
 exec xbindkeys
 
 # always open these
 exec --no-startup-id firefox
 exec --no-startup-id emacs
-exec --no-startup-id riot-desktop
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
